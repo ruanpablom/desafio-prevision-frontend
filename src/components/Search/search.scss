@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+
+.search {
+  &__container {
+    display: flex;
+    color: $light-color;
+    padding: 20px 0 20px 0;
+  }
+  &__input {
+    width: 100%;
+    border: 2px solid $light-color;
+    background-color: transparent;
+    color: inherit;
+    padding: 10px;
+    border-radius: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    @include box-shadow(2);
+
+    &::placeholder {
+      color: $light-color;
+      opacity: 0.5;
+    }
+    &:focus {
+      background-color: $med-color;
+    }
+  }
+}
